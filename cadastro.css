@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100&family=Poppins:wght@300;400;500&display=swap');
+
+*{ /*tirei o preenchimento padrão dos elementos, tirei as margens padrão dos elementos, defini a largura e a altura dos elementos incluam as bordas, defini a fonte padrão para todos os elementos .*/
+    padding: 0; 
+    margin: 0;  
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+}
+body{ /* defini a imagem de plano de fundo, a posição a repetição o tamanho, organizei os elementos do body*/ 
+    background-color: #8105a3;
+    background-position:center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px; 
+    min-height: 100vh; 
+
+}
+.w50{ /* defini a largura e alinhei os elementos */
+    width: 50%; 
+    float: left; 
+    padding-right: 15px; 
+
+}
+
+.box{ /* organizei o elementos na página, defini a largura*/
+    display:flex ;
+    width: 930px;
+}
+
+.img-box{ /* defini a cor, a largura, a organização dos elementos, alinhei os itens ao centro, os lados e a borda */
+    background-color:rgba( 255, 255, 255, 0.5); 
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+}
+.img-box img{ /* defini a largura da imagem*/
+    width: 100%;
+
+}
+.formbox{ /*defini a cor de fundo, apliquei desfoque, defini os lados ao redor, a largura e a borda*/
+    background-color: rgba( 255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+}
+.formbox h2{ /* defini o tamanho da fonte*/
+    font-size: 30px;
+}
+.formbox p{ /*coloquei em negrito e defini a cor*/
+   font-weight: bold;
+   color: #3d3d3d;
+}
+.formbox p a{ /* defini a cor e retirei o sublinhado do link*/
+    color:  #8105a3;
+    text-decoration: none;
+}
+.formbox form{ /* defini a margem */
+    margin: 20px 0;
+}
+form .input-group { /*defini a margem area na parte inferior do elemento*/
+    margin-bottom:15px;
+}
+form .input-group label { /* defini a cor, coloquei em negrito, defini como os elementos serão dispostos na página, defini a margem*/
+    color: #3d3d3d;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+form .input-group input{ /* defini a largura e altura, as core, a distância até a borda, a borda, defini a fonte e uma transição de 0.4s*/
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+form .input-group input:focus{ /*defini a cor da borda*/
+    border-color: rgb(165, 17, 17);
+}
+
+form .input-group button{ /* defini a largura e altura, a cor, defii as bordas arredondadas, a cor do texto, o tamanho do texto, e o cursor como ponteiro quando passar sobre o botão*/
+    width: 100%;
+    height: 47px;
+    background:  #8105a3;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+@media (max-width:930px){ 
+    .img-box{
+        display: none; /* ocultei os elementos com o plano de fundo*/
+    }
+    .box{
+        width: 700px; /*defini a largura*/
+    }
+    .formbox{  /*defini a largura e os cantos arredondados*/
+        width: 100%;
+        border-radius: 20px;
+    }
+
+}
+@media (max-width: 500px) {
+    .w50{ /*redefini a largura dos elementos  e removi o preenchimento */
+        width: 100%;
+        padding: 0;
+    }
+}
