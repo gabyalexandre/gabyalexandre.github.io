@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100&family=Poppins:wght@300;400;500&display=swap');
+
+*{ /*tirei o preenchimento padrão dos elementos, tirei as margens padrão dos elementos, defini a largura e a altura dos elementos incluam as bordas, definia fonte padrão para todos os elementos .*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{ /*organizei os elementos da página, centralizei, alinhei os itens, defini a altura, o plano de fundo, a posição, repetição e tamanho*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #8105a3 ;
+
+}
+.wraper{/* defini a largura, a cor do plano de fundo, defini a borda, apliquei um efeito de desfoque no fundo, defini a cor do texto, adicionei uma sombra e os cantos arredondados  */
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: black;
+    border-radius: 10px;
+    padding: 30px 40px;
+ }
+ .wraper h1 { /* defini o tamanho da fonte do h1 e alinhei ao centro*/
+   font-size: 36px;
+   text-align: center;
+ }
+
+ .wraper .input-box{ /*defini o posicionamento como relativo, defini a largura, a altura dos elementos, define o plano de fundo transparente e adicionei a margem */
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    margin: 30px 0;
+ }
+ .input-box input{ /*defini a largura e a altura, o plano de fundo como transparente, removi a borda e o contorno padrão, fiz uma borda customizada, e defini o tamanho da fonte e a cor do texto*/
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+ }
+
+ .input-box input::placeholder{ /* defini a cor do texto*/
+    color: black;
+ }
+
+ .input-box i { /*define o posicionamento como absoluto, a posição a direita e centralizada apliquei um efeito de transformação para centralizar, e defini o tamanho da fonte.*/
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+ }
+
+ .wraper .remember-forgot { /* organizei os elementos, distribuí o espaço entre os elementos, defini o tamanho da fonte e a margem*/
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+
+ }
+
+ .remember-forgot label input { /*adicionei um sublinhado ao link quando o mouse passa sobre ele.*/
+    accent-color: #fff;
+    margin-right: 3px;
+ }
+
+ .remember-forgot a { /* defini a cor e a e o sublinhado do link*/
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .remember-forgot a:hover{ /*adicionei um sublinhado ao link quando o mouse passa sobre ele.*/
+    text-decoration: underline;
+ }
+
+ .wraper .btn { /*defini a largura e altura do botão, a cor, defini as bordas arredondadas e o cursor como um ponteiro ao passar sobre o botão, o tamanho da fonte do botão, a cor do texto e a espessura da fonte*/ 
+   width: 100%;
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+ }
+
+ .wraper .register-link{ /* defini o tamanho da fonte, centralizei o texto dos links, defini as margens e a cor */
+    font-size: 14.5px ;
+    text-align: center;
+    margin: 20px 0 15px;
+    color: #fff;
+
+ }
+
+ .register-link p a { /*defini a cor, removi o sublinhado do link e defini a espessura da fonte (negrito)*/
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+ }
+
+ .register-link p a:hover { /*adicionei um sublinhado ao link quando o mouse passa sobre ele.*/
+    text-decoration: underline;
+ }

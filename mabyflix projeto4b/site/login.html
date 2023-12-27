@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wraper">
+        <form action="index.html" onsubmit="return validarForm()">
+            <!-- O botão com ação de ir diretamente para nosso site quando o usuário concluir o cadastro -->
+            <!-- e chamar à função "validarForm()" ao enviar -->
+            <h1>WELCOME TO MABYFLIX</h1>
+                <center><h3>faça seu login</h3></center>
+            <div class="input-box">
+                <input type="email" id="email" placeholder="Digite seu email">
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="senha" placeholder="Digite sua senha">
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Lembrar-me</label>
+            </div>
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register-link">
+                <p>Não tem uma conta? <a
+                 href="cadastro.html">Cadastre-se</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+        function validarForm() { // criei uma função para validar o formulário 
+            var email = document.getElementById("email").value;// Obtém o valor do campo de e-mail.
+            var password = document.getElementById("senha").value; // Obtém o valor do campo de senha.
+
+            //Verificar se o campo de nome está vazio
+            if (email === "") {
+                alert("Por favor, preencha o campo email.");
+                return false; // Impede o envio de formulário
+
+            } else if (password === "") {
+                alert("Por favor, preencha o campo senha.");
+                return false; // Impede o envio de formulário
+            } else {
+                // Se o campo estiver preenchido, permite o envio do formulário
+                return true;
+
+            }
+
+        }
+    </script>
+</body>
+</html>

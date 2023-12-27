@@ -1,0 +1,14 @@
+/* Defini o fundo preto para o fundo da página */
+body {
+    background-color: black;
+}
+
+/* Defini a cor do texto para títulos h1 */
+h1 {
+    color: #8105a3;
+}
+
+/* Defini a cor de fundo específica para elementos com a classe 'cor1' */
+.cor1 {
+    background-color: #8105a3;
+}

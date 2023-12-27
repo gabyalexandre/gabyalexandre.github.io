@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="img-box">
+            <img src="icone.png">
+            <!-- Exibe uma imagem "icone.png"  que é oplano de fundo da nossa página de cadastro-->
+        </div>
+        <div class="formbox">
+            <h2>Criar Conta</h2>
+            <p>Já é um membro? <a href="login.html">Login</a></p> <!-- Um parágrafo com um link para nossa página de login se caso já possuir um cadastro -->
+            <form action="login.html" onsubmit="return validarForm()">
+            <!-- O botão com ação de ir diretamente para nossa página de login quando o usuário concluir o cadastro -->
+            <!-- e chamar à função "validarForm()" ao enviar -->
+
+                <div class="input-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" placeholder="Digite o seu nome completo" required >
+                </div>
+                <!-- Campo de texto para "Nome Completo" -->
+
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite o seu email" >
+                </div>
+                <!-- Campo de texto para "Email" -->
+
+                <div class="input-group">
+                    <label for="date">Data de nascimento</label>
+                    <input type="date" id="data" placeholder="Informe sua data de nascimento" required >
+                </div>
+                <!-- Campo de texto para "Data de Nascimento" -->
+
+                <div class="input-group w50">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha" >
+                </div>
+                <!-- Campo de texto para "Senha" -->
+
+                <div class="input-group w50">
+                    <label for="Confirmarsenha">Confirmar Senha</label>
+                    <input type="password" id="Confirmar senha" placeholder="Confirme sua senha" >
+                </div>
+                <!-- Campo de texto para "Confirmar Senha" -->
+
+                <div class="input-group">
+                    <button>Cadastrar</button>
+                </div>
+                <!-- Botão "Cadastrar" para enviar o formulário para o site -->
+            </form>
+        </div>
+    </div>
+    <script>
+        function validarForm() { // criei uma função para validar o formulário 
+            var email = document.getElementById("email").value; // Obtém o valor do campo de e-mail.
+            var password = document.getElementById("senha").value; // Obtém o valor do campo de senha.
+            var date = document.getElementById ("data").value // Obtém o valor do campo de data .
+
+            //Verificar se o campo de nome está vazio
+            if (email === "") {
+                alert("Por favor, preencha o campo email.");
+                return false; // Impede o envio de formulário
+
+            } else if (password === "") {
+                alert("Por favor, preencha o campo senha.");
+                return false; // Impede o envio de formulário
+            } else {
+                // Se o campo estiver preenchido, permite o envio do formulário
+                return true;
+
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

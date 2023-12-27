@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links para estilos e scripts externos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>MABYFLIX</title>
+
+</head>
+
+<body>
+    <div class="nome text-center">
+       <!-- Cabeçalho -->
+        <h1> MABYFLIX </h1>
+    </div>
+
+     <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light cor1">
+        <a class="navbar-brand" href="#">MABYFLIX</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Filmes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Opções 
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Comédia</a>
+                <a class="dropdown-item" href="#">Animes</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Ação</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Desativado</a>
+            </li>
+          </ul>
+          <!-- Formulário de busca na barra de navegação -->
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+      <br> <br>
+          <!-- Carrossel de imagens -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        
+        <center>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-70" src="4.jpg" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-70" src="2.jpg" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-70=" src="3.jpg" alt="Terceiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-70" src="1.jpg" alt="Terceiro Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+      <center>
+    
+    
+
+    <!-- Título da seção de filmes -->
+      <br><br>
+    <div class="container text-light">
+        <h2>FILMES (CLIQUE NO QUE DESEJA ASSITIR) </h2>
+    </div>
+    <!-- Contêiner para inserir os filmes -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+              <a href="birdbox.html"> <img id="mae" src="mamii.jpeg" class="img-fluid"/>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="calma.html"> <img id="mae" src="calma.jpg" class="img-fluid"/>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="toryca.html"> <img id="mae" src="ryca.jpg" class="img-fluid"/>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="ultimo.html"> <img id="mae" src="ultimo.jpeg" class="img-fluid"/>
+              </a>
+            </div>
+        </div>
+    </div>
+    <br> <br>
+
+     <!-- Título da sessão de séries que serão lançadas -->
+    <div class="container text-light">
+        <h2> SÉRIES QUE SERÃO LANÇADAS </h2>
+    </div>
+    <!-- Contêiner para inserir as séries que serão lançadas  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="stranger.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="PLL.webp" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="riverdale.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="la casa de papel.webp" class="img-fluid" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <br> <br>
+     <!-- Título da sessão dos mais assistidos -->
+    <div class="container text-light">
+        <h2>MAIS ASSISTIDOS</h2>
+    </div>
+    <!-- Contêiner para inserir os mais assistidos -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="vingadores.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="star wars.webp" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="rei leão.webp" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="titanic.jpg" class="img-fluid" alt="...">
+            </div>
+        </div>
+    </div>
+    <br> <br>
+     <!-- Título da sessão dos próximos lançamentos -->
+    <div class="container text-light">
+        <h2>PRÓXIMOS LANÇAMENTOS</h2>
+    </div>
+    <!-- Contêiner para inserir os próximos lançamentos -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="stranger.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="PLL.webp" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="riverdale.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="la casa de papel.webp" class="img-fluid" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <br> <br>
+   <!-- Título da sessão dos em breve -->
+    <div class="container text-light">
+        <h2>EM BREVE</h2>
+    </div>
+   <!-- Contêiner para inserir os em breve -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="f1.jpeg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="f2.jpeg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="f3.jpeg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-3">
+                <img src="f4.jpeg" class="img-fluid" alt="...">
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
