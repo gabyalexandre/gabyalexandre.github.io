@@ -85,7 +85,7 @@ form .input-group input{ /* defini a largura e altura, as core, a distância at�
     transition: all 0.4s ease;
 }
 form .input-group input:focus{ /*defini a cor da borda*/
-    border-color: rgb(165, 17, 17);
+    border-color: #8105a3;
 }
 
 form .input-group button{ /* defini a largura e altura, a cor, defii as bordas arredondadas, a cor do texto, o tamanho do texto, e o cursor como ponteiro quando passar sobre o botão*/
